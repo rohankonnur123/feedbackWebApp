@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+ 
+<!-- If IE use the latest rendering engine -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+ 
+<!-- Set the page to the width of the device and set the zoon level -->
+<meta name="viewport" content="width = device-width, initial-scale = 1">
+<title>Instructor Dashboard</title>
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
+<!-- <script src="https://use.typekit.net/cli8lmy.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+ -->
+<style type="text/css">
+@font-face {
+    font-family: DINNextLTPro-UltraLight;
+    src: url(fonts/DINNextLTPro-UltraLight.otf);
+}
+@font-face {
+    font-family: DINNextLTPro-Light;
+    src: url(fonts/DINNextLTPro-Light.otf);
+}
+@font-face {
+    font-family: DINNextLTPro-Bold;
+    src: url(fonts/DINNextLTPro-Bold.otf);
+}
+
+.text-primary {
+  font-size: 1em;
+  font-family: 'DINNextLTPro-Light';
+    color:#504A4B;
+}
+.text-headersmall {
+  font-size: 1em;
+  font-family: 'DINNextLTPro-Bold';
+    color:#504A4B;
+}
+.text-headermedium {
+  font-size: 1em;
+  font-family: 'DINNextLTPro-Bold';
+    color:#504A4B;
+}
+.text-headerlarge {
+  font-size: 1em;
+  font-family: 'DINNextLTPro-Bold';
+    color:#504A4B;
+}
+.text-button {
+  font-size: 1em;
+  font-family: 'DINNextLTPro-Light';
+    color:#FFFFFF;
+}
+
+.jumbotron p{
+  font-size: .75em;
+  font-family: 'DINNextLTPro-Light';
+    color:#504A4B;
+    font-family: 'DINNextLTPro-Light';
+}
+
+.container  p{
+  font-size: .75em;
+  font-family: 'DINNextLTPro-Light';
+    color:#504A4B;
+    font-family: 'DINNextLTPro-Light';
+}
+
+.row p{
+  font-size: 1em;
+  font-family: 'DINNextLTPro-Light';
+    color:#504A4B;
+    font-size: 1em;
+    font-family: 'DINNextLTPro-Light';
+}
+
+
+/* Adds borders for tabs */
+.tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+.nav-tabs {
+    margin-bottom: 0;
+}
+
+#graph{
+height: 250px;
+  width: 300px;
+}
+#ourteam2{
+height: 400px;
+  width: 1030px;
+}
+.text-footer {
+  font-size: .9em;
+  font-family: 'DINNextLTPro-Light';
+    color:#504A4B;
+    
+}
+
+</style>
+ 
+</head>
+
+<body>
+
+ <!-- font : <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
+<!-- CONTAINERS -->
+<!-- container puts padding around itself while container-fluid fills the whole screen. Bootstap grids require a container. -->
+<div class="container">
+ 
+<!-- page-header adds space aroundtext and enlarges it. It also adds an underline at the end -->
+
+
+<div class="page-header">
+ <div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <a href="dashboard_instructor.html"> <img src="media/title2.png" id="logo2" class="img-responsive img-thumbnail pull-left" alt="Responsive image" style="border-style: none" width="200" height="25" alt="logo2">
+      </a></h1>
+    </div>
+    <p>
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <h2>
+        <div class="btn-group lg-btn-group-lg md-btn-group-md sm-btn-group-lg xs-btn-group-md" role="group" aria-label="...">
+     
+        
+  <a href="dashboard_instructor.html" class = "btn btn-warning btn-lg" role="button" button type= "submit"> <span class="text-button">dashboard</span> </a>
+         <a href="INSERT LINK" class = "btn btn-warning btn-lg" role="button" button type= "submit"> <span class="text-button">all students</span> </a>
+        <a href="INSERT LINK" class = "btn btn-warning btn-lg" role="button" button type= "submit"> <span class="text-button">log out</span> </a>
+
+
+            
+        </div> 
+      </h2>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<p>
+  <div class="container">
+<!-- jumbotron enlarges fonts and puts everything in a gray box with rounded corners. If jumbotron is outside a container it fills the total width. You can change the styles by placing the changes after the Bootstrap CDN link -->
+<div class="jumbotron"> 
+
+<div class="container">
+  <h3> <span class="text-headerlarge">Class Performance Dashboard</span> </h3>
+    </div>
+     <h4> <span class="text-primary">Below you can view overall performance for students grouped by team, or click the team name for more detail.</span> </h4>
+
+          </div>
+          </div>
+
+
+<div class="jumbotron"> 
+
+<div class="container">
+<!-- col means column, md >=992px (Also use xs, sm and lg), and the 3 represents the size of the column
+3 * 4 = 12 (A 6 column layout would use 2 if they had equal size) -->
+  <div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        
+      <div class="media">
+          <a class="pull-left">
+        <img class="media-object" src="media/graph1.png" id="graph" alt="team graph">
+          </a>
+      <div class="media-body">
+            <h4> <a href="index.html"> <span class="text-headermedium">Team 1</span> </h4>
+       </div>
+     </div>
+      </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <div class="media">
+          <a class="pull-left">
+        <img class="media-object" src="media/graph1.png" id="graph" alt="team graph">
+          </a>
+      <div class="media-body">
+            <h4> <a href="index.html"><span class="text-headermedium">Team 2</span> </h4>
+       </div>
+     </div>
+      </div>
+
+     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <div class="media">
+          <a class="pull-left">
+        <img class="media-object" src="media/graph1.png" id="graph" alt="team graph">
+          </a>
+      <div class="media-body">
+            <h4> <a href="index.html"><span class="text-headermedium">Team 3</span> </h4>
+       </div>
+     </div>
+      </div>
+      
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <div class="media">
+          <a class="pull-left">
+        <img class="media-object" src="media/graph1.png" id="graph" alt="team graph">
+          </a>
+      <div class="media-body">
+            <h4> <a href="index.html"><span class="text-headermedium">Team 4</span> </h4>
+       </div>
+     </div>
+      </div>
+     
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <div class="media">
+          <a class="pull-left">
+        <img class="media-object" src="media/graph1.png" id="graph" alt="team graph">
+          </a>
+      <div class="media-body">
+            <h4><a href="index.html"> <span class="text-headermedium">Team 5</span> </h4>
+       </div>
+     </div>
+      </div>
+<p>
+
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <div class="media">
+          <a class="pull-left">
+        <img class="media-object" src="media/graph1.png" id="graph" alt="team graph">
+          </a>
+      <div class="media-body">
+            <h4> <a href="index.html"><span class="text-headermedium">Team 6</span> </h4>
+       </div>
+     </div>
+      </div>
+<p>
+
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <div class="media">
+          <a class="pull-left">
+        <img class="media-object" src="media/graph1.png" id="graph" alt="team graph">
+          </a>
+      <div class="media-body">
+            <h4> <a href="index.html"><span class="text-headermedium">Team 7</span> </h4>
+       </div>
+     </div>
+      </div>
+<p>
+
+     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <div class="media">
+          <a class="pull-left">
+        <img class="media-object" src="media/graph1.png" id="graph" alt="team graph">
+          </a>
+      <div class="media-body">
+            <h4> <a href="index.html"><span class="text-headermedium">Team 8</span> </h4>
+       </div>
+     </div>
+      </div>
+<p>
+      
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <div class="media">
+          <a class="pull-left">
+        <img class="media-object" src="media/graph1.png" id="graph" alt="team graph">
+          </a>
+      <div class="media-body">
+            <h4> <a href="index.html"><span class="text-headermedium">Team 9</span> </h4>
+       </div>
+     </div>
+      </div>
+<p>
+     
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <div class="media">
+          <a class="pull-left">
+        <img class="media-object" src="media/graph1.png" id="graph" alt="team graph">
+          </a>
+      <div class="media-body">
+            <h4> <a href="index.html"><span class="text-headermedium">Team 10</span> </h4>
+       </div>
+     </div>
+      </div>
+<p>
+
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <div class="media">
+          <a class="pull-left">
+        <img class="media-object" src="media/graph1.png" id="graph" alt="team graph">
+          </a>
+      <div class="media-body">
+            <h4> <a href="index.html"> <span class="text-headermedium">Team 11</span> </h4>
+       </div>
+     </div>
+      </div>
+<p>
+<p>
+     </div>
+   </div>
+   </div> <!-- media-body for Eggplant closes here -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<span class="text-footer">This tool is brought to you by Group 8.</span>
+
+</div>
+
+</div>
+
+</div><br>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<!-- Use downloaded version of Bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+ 
+<!-- If IE use the latest rendering engine -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+ 
+<!-- Set the page to the width of the device and set the zoon level -->
+<meta name="viewport" content="width = device-width, initial-scale = 1">
+<title>Three Sixty</title>
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
+<!-- <script src="https://use.typekit.net/cli8lmy.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+ -->
+<style type="text/css">
+@font-face {
+    font-family: DINNextLTPro-UltraLight;
+    src: url(fonts/DINNextLTPro-UltraLight.otf);
+}
+@font-face {
+    font-family: DINNextLTPro-Light;
+    src: url(fonts/DINNextLTPro-Light.otf);
+}
+@font-face {
+    font-family: DINNextLTPro-Bold;
+    src: url(fonts/DINNextLTPro-Bold.otf);
+}
+
+.text-primary {
+  font-size: 1em;
+  font-family: 'DINNextLTPro-Light';
+    color:#504A4B;
+}
+.text-primarywhite {
+  font-size: .5em;
+  font-family: 'DINNextLTPro-Light';
+    color:#FFFFFF;
+}
+.text-headersmall {
+  font-size: 5em;
+  font-family: 'DINNextLTPro-Bold';
+    color:#504A4B;
+}
+.text-headermedium {
+  font-size: 1.5em;
+  font-family: 'DINNextLTPro-Light';
+    color:#504A4B;
+}
+.text-headerlarge {
+  font-size: 10em;
+  font-family: 'DINNextLTPro-Bold';
+    color:#504A4B;
+}
+
+.text-button {
+  font-size: 1em;
+  font-family: 'DINNextLTPro-Light';
+    color:#FFFFFF;
+}
+
+.jumbotron p{
+  font-size: 1.5em;
+  font-family: 'DINNextLTPro-Light';
+    color:#504A4B;
+    font-size: 1.2em;
+    font-family: 'DINNextLTPro-Light';
+   text-align: center;
+}
+
+.container  p{
+  font-size: 1.5em;
+  font-family: 'DINNextLTPro-Light';
+    color:#504A4B;
+    font-size: 1.2em;
+    font-family: 'DINNextLTPro-Light';
+}
+
+.row p{
+  font-size: 1.5em;
+  font-family: 'DINNextLTPro-Light';
+    color:#504A4B;
+    font-size: 1.2em;
+    font-family: 'DINNextLTPro-Light';
+}
+
+.page-header {
+  font-size: 1em;
+  font-family: 'DINNextLTPro-Light';
+    color:#504A4B;
+}
+/* Adds borders for tabs */
+.tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+.nav-tabs {
+    margin-bottom: 0;
+}
+.text-footer {
+  font-size: .9em;
+  font-family: 'DINNextLTPro-Light';
+    color:#504A4B;   
+}
+
+
+/* Statistics */
+
+	.statistics {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		width: 100%;
+		margin: 0 0 3em 0;
+		padding: 0;
+		list-style: none;
+		cursor: default;
+     font-family: 'DINNextLTPro-Light';
+	}
+
+		.statistics li {
+			-moz-flex: 1;
+			-webkit-flex: 1;
+			-ms-flex: 1;
+			flex: 1;
+			padding: 1.2em;
+			color: #FFFFFF;
+			text-align: center;
+		}
+
+			.statistics li.style1 {
+				background-color: #5b957d;
+			}
+
+			.statistics li.style2 {
+				background-color: #345e62;
+			}
+
+			.statistics li.style3 {
+				background-color: #98d19f;
+			}
+
+
+			.statistics li strong, .statistics li b {
+				display: block;
+				font-size: 2em;
+				line-height: 1.1;
+				color: inherit !important;
+				font-weight: 300;
+        font-family: 'DINNextLTPro-Light';
+				letter-spacing: -0.025em;
+			}
+
+			.statistics li:first-child {
+				border-top-left-radius: 8px;
+				border-bottom-left-radius: 8px;
+			}
+
+			.statistics li:last-child {
+				border-top-right-radius: 8px;
+				border-bottom-right-radius: 8px;
+			}
+
+			.statistics li .icon {
+				display: inline-block;
+			}
+
+				.statistics li .icon:before {
+					font-size: 2.75rem;
+					line-height: 1.3;
+				}
+
+		@media screen and (max-width: 980px) {
+
+			.statistics li strong, .statistics li b {
+				font-size: 1.5em;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			.statistics {
+				display: block;
+				width: 20em;
+				max-width: 100%;
+				margin: 0 auto 2em auto;
+			}
+
+				.statistics li:first-child {
+					border-bottom-left-radius: 0;
+					border-top-right-radius: 8px;
+				}
+
+				.statistics li:last-child {
+					border-top-right-radius: 0;
+					border-bottom-left-radius: 8px;
+				}
+
+				.statistics li .icon:before {
+					font-size: 3.75rem;
+				}
+
+				.statistics li strong, .statistics li b {
+					font-size: 2.5em;
+				}
+
+		}
+
+		/*FROM HERE!! Spacing for the title before social media stuff: support us and follow our progress*/
+
+		section.special, article.special {
+		text-align: center;
+	}
+
+	header.major {
+		margin-bottom: 3em;
+	}
+
+		header.major h2 {
+			font-size: 2em;
+		}
+
+			header.major h2:after {
+				display: block;
+				content: '';
+				width: 3.25em;
+				height: 2px;
+				margin: 0.7em 0 1em 0;
+				border-radius: 2px;
+			}
+
+				section.special header.major h2:after, article.special header.major h2:after {
+					margin-left: auto;
+					margin-right: auto;
+				}
+
+		header.major p {
+			font-size: 1.25em;
+			letter-spacing: -0.025em;
+		}
+
+		header.major.special {
+			text-align: center;
+		}
+
+			header.major.special h2:after {
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+	footer.major {
+		margin-top: 3em;
+	}
+
+
+</style>
+ 
+</head>
+
+<body>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+ 
+<!-- If IE use the latest rendering engine -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+ 
+<!-- Set the page to the width of the device and set the zoon level -->
+<meta name="viewport" content="width = device-width, initial-scale = 1">
+<title>Three Sixty</title>
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+ 
+<style>
+.jumbotron{
+    background-color:#D6D7D1;
+    color:#504A4B;
+}
+/* Adds borders for tabs */
+.tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+.nav-tabs {
+    margin-bottom: 0;
+}
+.btn {
+    padding: 14px 24px;
+    border: 0 none;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+ 
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+ 
+.btn-primary {
+    background: #345E62;
+    color: #345E62;
+}
+ 
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: #032042;
+}
+ 
+.btn-primary:active, .btn-primary.active {
+    background: #14374C;
+    box-shadow: none;
+}
+.btn.outline {
+  background: #032042;
+  padding: 12px 22px;
+}
+.btn-primary.outline {
+  border: 2px solid #032042;
+  color: #032042;
+}
+.btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary {
+  color: #032042;
+  border-color: #032042;
+}
+.btn-primary.outline:active, .btn-primary.outline.active {
+  border-color: #032042;
+  color: #032042;
+  box-shadow: none;
+}
+
+</style>
+ 
+</head>
+<body>
+
+
+<!-- CONTAINERS -->
+<!-- container puts padding around itself while container-fluid fills the whole screen. Bootstap grids require a container. -->
+<div class="container">
+ 
+<!-- page-header adds space aroundtext and enlarges it. It also adds an underline at the end -->
+<div class="page-header">
+  <div class="row">
+    <div class="col-lg-11 col-md-6 col-sm-12 col-xs-12">
+       <img src="media/title.png" id="logo2" class="img-responsive img-thumbnail pull-left" alt="Responsive image" style="border-style: none" width="3000" height="500" alt="logo2">
+      </a></h1>
+    </div>
+</div>
+
+<!-- jumbotron enlarges fonts and puts everything in a gray box with rounded corners. If jumbotron is outside a container it fills the total width. You can change the styles by placing the changes after the Bootstrap CDN link -->
+<div class="jumbotron">
+<p>Welcome to the peer evaluation platform for IND ENG 171 - Technology Firm Leadership. </p>
+ 
+<!-- BUTTONS -->
+<!-- There are many built in button colors and sizes. If a link is to trigger in page functionality it should use role="button". The button element should be used in most situations -->
+<p>
+
+ 
+<a href="form_student.html" class = "btn btn-primary btn-lg" role="button" button type= "submit"> <span class="text-button">Student Log In</span> </a>
+<p>
+<a href="dashboard_instructor.html" class = "btn btn-primary btn-lg" role="button" button type= "submit"> <span class="text-button">Instructor Log In</span> </a>
+
+
+</div>
+
+
+<span class="text-footer">This tool is brought to you by Group 8.</span>
+
+</div>
+
+</div>
+
+</div><br>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<!-- Use downloaded version of Bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
