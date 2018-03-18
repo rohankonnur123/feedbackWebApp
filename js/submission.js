@@ -3,9 +3,9 @@ var q1feedback = document.getElementById("question1")
 var postScore = document.getElementById("overallScore")
 
 
-var firebasereference = firebase.database().ref().child("Slider 1 Value")
+var firebasereference = firebase.database().ref().child("Rohan Konnur").child("Comments")
 
-firebasereference.on('overallScore', function(databasesnapshot) {
+firebasereference.on('value', function(databasesnapshot) {
 	postScore.innerText = databasesnapshot.val();
 })
 

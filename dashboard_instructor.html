@@ -14,8 +14,7 @@
 <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 
 <!-- <script src="https://use.typekit.net/cli8lmy.js"></script>
-<script>try{Typekit.load({ async: true });}catch(e){}</script>
- -->
+<script>try{Typekit.load({ async: true });}catch(e){}</script>-->
 <style type="text/css">
 @font-face {
     font-family: DINNextLTPro-UltraLight;
@@ -102,7 +101,13 @@ height: 400px;
   font-size: .9em;
   font-family: 'DINNextLTPro-Light';
     color:#504A4B;
-    
+}
+table, th, td {
+    border: 1px solid black;
+    text-align:center;
+}
+.ptag {
+  font-size: 1em;
 }
 
 </style>
@@ -111,9 +116,8 @@ height: 400px;
 
 <body>
 
- <!-- font : <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+ <!-- font : <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'-->
 
-<!-- CONTAINERS -->
 <!-- container puts padding around itself while container-fluid fills the whole screen. Bootstap grids require a container. -->
 <div class="container">
  
@@ -146,162 +150,420 @@ height: 400px;
 </div>
 
 
-<p>
-  <div class="container">
+<span id="demo2"> Hello </span>
+<div class="container">
 <!-- jumbotron enlarges fonts and puts everything in a gray box with rounded corners. If jumbotron is outside a container it fills the total width. You can change the styles by placing the changes after the Bootstrap CDN link -->
 <div class="jumbotron"> 
 
-<div class="container">
-  <h3> <span class="text-headerlarge">Class Performance Dashboard</span> </h3>
-    </div>
-     <h4> <span class="text-primary">Below you can view overall performance for students grouped by team, or click the team name for more detail.</span> </h4>
+  <div class="container">
+    <h3> <span class="text-headerlarge">Class Performance Dashboard</span> </h3>
+  </div>
+  <div>
+  <h4> <span class="text-primary">Score Table</span> </h4>
+  </div>
+</br>
+  <table border="1" cellspacing="0" style="width:100%">
+    <tr align="right">
+      <th colspan="6" align="right"> Time Table </th>
+    </tr>
+    <tr align="right">
+      <th> Student Name </th>
+      <th> Project 1 Scores </th>
+      <th> Project 2 Scores </th>
+      <th> Project 3 Scores </th>
+      <th> Project 4 Scores </th>
+      <th> Total Scores </th>
+    </tr>
+    <tr>
+      <td> <span class="ptag" id="demo"></span> </td>
+      <td id="student1proj1"> n/a </td>
+      <td id='student1proj2'> n/a </td>
+      <td id='student1proj3'> n/a </td>
+      <td id='student1proj4'> n/a </td>
+      <td id='student1total'> n/a </td>
+    </tr>
+    <tr>
+      <td> Student #02 </td>
+      <td id="student2proj1"> n/a </td>
+      <td id='student2proj2'> n/a </td>
+      <td id='student2proj3'> n/a </td>
+      <td id='student2proj4'> n/a </td>
+      <td id='student2total'> n/a </td>
+    </tr>
+    <tr>
+      <td> Student #03 </td>
+      <td id="student3proj1"> n/a </td>
+      <td id='student3proj2'> n/a </td>
+      <td id='student3proj3'> n/a </td>
+      <td id='student3proj4'> n/a </td>
+      <td id='student3total'> n/a </td>
+    </tr>
+    <tr>
+      <td> Student #04 </td>
+      <td id="student4proj1"> n/a </td>
+      <td id='student4proj2'> n/a </td>
+      <td id='student4proj3'> n/a </td>
+      <td id='student4proj4'> n/a </td>
+      <td id='student4total'> n/a </td>
+    </tr>
+    <tr>
+      <td> Student #05 </td>
+      <td id="student5proj1"> n/a </td>
+      <td id='student5proj2'> n/a </td>
+      <td id='student5proj3'> n/a </td>
+      <td id='student5proj4'> n/a </td>
+      <td id='student5total'> n/a </td>
+    </tr>
+    <tr>
+      <td> Student #06 </td>
+      <td id="student6proj1"> n/a </td>
+      <td id='student6proj2'> n/a </td>
+      <td id='student6proj3'> n/a </td>
+      <td id='student6proj4'> n/a </td>
+      <td id='student6total'> n/a </td>
+    </tr>
+    <tr>
+      <td> Student #07 </td>
+      <td id="student7proj1"> n/a </td>
+      <td id='student7proj2'> n/a </td>
+      <td id='student7proj3'> n/a </td>
+      <td id='student7proj4'> n/a </td>
+      <td id='student7total'> n/a </td>
+    </tr>
+    <tr>
+      <td> Student #08 </td>
+      <td id="student8proj1"> n/a </td>
+      <td id='student8proj2'> n/a </td>
+      <td id='student8proj3'> n/a </td>
+      <td id='student8proj4'> n/a </td>
+      <td id='student8total'> n/a </td>
+    </tr>
+    <tr>
+      <td> Student #09 </td>
+      <td id="student9proj1"> n/a </td>
+      <td id='student9proj2'> n/a </td>
+      <td id='student9proj3'> n/a </td>
+      <td id='student9proj4'> n/a </td>
+      <td id='student9total'> n/a </td>
+    </tr>
+    <tr>
+      <td> Student #10 </td>
+      <td id="student10proj1"> n/a </td>
+      <td id='student10proj2'> n/a </td>
+      <td id='student10proj3'> n/a </td>
+      <td id='student10proj4'> n/a </td>
+      <td id='student10total'> n/a </td>
+    </tr>
+    <tr>
+      <td> Student #11 </td>
+      <td id="student11proj1"> n/a </td>
+      <td id='student11proj2'> n/a </td>
+      <td id='student11proj3'> n/a </td>
+      <td id='student11proj4'> n/a </td>
+      <td id='student11total'> n/a </td>
+    </tr>
+    <tr>
+      <td> Student #12 </td>
+      <td id="student12proj1"> n/a </td>
+      <td id='student12proj2'> n/a </td>
+      <td id='student12proj3'> n/a </td>
+      <td id='student12proj4'> n/a </td>
+      <td id='student12total'> n/a </td>
+    </tr>
+    <tr>
+      <td> Student #13 </td>
+      <td id="student13proj1"> n/a </td>
+      <td id='student13proj2'> n/a </td>
+      <td id='student13proj3'> n/a </td>
+      <td id='student13proj4'> n/a </td>
+      <td id='student13total'> n/a </td>
+    </tr>
+    <tr>
+      <td> Student #14 </td>
+      <td id="student14proj1"> n/a </td>
+      <td id='student14proj2'> n/a </td>
+      <td id='student14proj3'> n/a </td>
+      <td id='student14proj4'> n/a </td>
+      <td id='student14total'> n/a </td>
+    </tr>
+    <tr>
+      <td> Student #15 </td>
+      <td id="student15proj1"> n/a </td>
+      <td id='student15proj2'> n/a </td>
+      <td id='student15proj3'> n/a </td>
+      <td id='student15proj4'> n/a </td>
+      <td id='student15total'> n/a </td>
+    </tr>
+    <tr>
+      <td> Student #16 </td>
+      <td id="student16proj1"> n/a </td>
+      <td id='student16proj2'> n/a </td>
+      <td id='student16proj3'> n/a </td>
+      <td id='student16proj4'> n/a </td>
+      <td id='student16total'> n/a </td>
+    </tr>
+    <tr>
+      <td> Student #17 </td>
+      <td id="student17proj1"> n/a </td>
+      <td id='student17proj2'> n/a </td>
+      <td id='student17proj3'> n/a </td>
+      <td id='student17proj4'> n/a </td>
+      <td id='student17total'> n/a </td>
+    </tr>
+    <tr>
+      <td> Student #18 </td>
+      <td id="student18proj1"> n/a </td>
+      <td id='student18proj2'> n/a </td>
+      <td id='student18proj3'> n/a </td>
+      <td id='student18proj4'> n/a </td>
+      <td id='student18total'> n/a </td>
+    </tr>
+    <tr>
+      <td> Student #19 </td>
+      <td id="student19proj1"> n/a </td>
+      <td id='student19proj2'> n/a </td>
+      <td id='student19proj3'> n/a </td>
+      <td id='student19proj4'> n/a </td>
+      <td id='student19total'> n/a </td>
+    </tr>
+    <tr>
+      <td> Student #20 </td>
+      <td id="student20proj1"> n/a </td>
+      <td id='student20proj2'> n/a </td>
+      <td id='student20proj3'> n/a </td>
+      <td id='student20proj4'> n/a </td>
+      <td id='student20total'> n/a </td>
+    </tr>
+    <tr>
+      <td> Student #21 </td>
+      <td id="student21proj1"> n/a </td>
+      <td id='student21proj2'> n/a </td>
+      <td id='student21proj3'> n/a </td>
+      <td id='student21proj4'> n/a </td>
+      <td id='student21total'> n/a </td>
+    </tr>
+    <tr>
+      <td> Student #22 </td>
+      <td id="student22proj1"> n/a </td>
+      <td id='student22proj2'> n/a </td>
+      <td id='student22proj3'> n/a </td>
+      <td id='student22proj4'> n/a </td>
+      <td id='student22total'> n/a </td>
+    </tr>
+    <tr>
+      <td> Student #23 </td>
+      <td id="student23proj1"> n/a </td>
+      <td id='student23proj2'> n/a </td>
+      <td id='student23proj3'> n/a </td>
+      <td id='student23proj4'> n/a </td>
+      <td id='student23total'> n/a </td>
+    </tr>
+    <tr>
+      <td> Student #24 </td>
+      <td id="student24proj1"> n/a </td>
+      <td id='student24proj2'> n/a </td>
+      <td id='student24proj3'> n/a </td>
+      <td id='student24proj4'> n/a </td>
+      <td id='student24total'> n/a </td>
+    </tr>
+    <tr>
+      <td> Student #25 </td>
+      <td id="student25proj1"> n/a </td>
+      <td id='student25proj2'> n/a </td>
+      <td id='student25proj3'> n/a </td>
+      <td id='student25proj4'> n/a </td>
+      <td id='student25total'> n/a </td>
+    </tr>
+    <tr>
+      <td> Student #26 </td>
+      <td id="student26proj1"> n/a </td>
+      <td id='student26proj2'> n/a </td>
+      <td id='student26proj3'> n/a </td>
+      <td id='student26proj4'> n/a </td>
+      <td id='student26total'> n/a </td>
+    </tr>
+    <tr>
+      <td> Student #27 </td>
+      <td id="student27proj1"> n/a </td>
+      <td id='student27proj2'> n/a </td>
+      <td id='student27proj3'> n/a </td>
+      <td id='student27proj4'> n/a </td>
+      <td id='student27total'> n/a </td>
+    </tr>
+    <tr>
+      <td> Student #28 </td>
+      <td id="student28proj1"> n/a </td>
+      <td id='student28proj2'> n/a </td>
+      <td id='student28proj3'> n/a </td>
+      <td id='student28proj4'> n/a </td>
+      <td id='student28total'> n/a </td>
+    </tr>
+    <tr>
+      <td> Student #29 </td>
+      <td id="student29proj1"> n/a </td>
+      <td id='student29proj2'> n/a </td>
+      <td id='student29proj3'> n/a </td>
+      <td id='student29proj4'> n/a </td>
+      <td id='student29total'> n/a </td>
+    </tr>
+    <tr>
+      <td> Student #30 </td>
+      <td id="student30proj1"> n/a </td>
+      <td id='student30proj2'> n/a </td>
+      <td id='student30proj3'> n/a </td>
+      <td id='student30proj4'> n/a </td>
+      <td id='student30total'> n/a </td>
+    </tr>
+    <tr>
+      <td> Student #31 </td>
+      <td id="student31proj1"> n/a </td>
+      <td id='student31proj2'> n/a </td>
+      <td id='student31proj3'> n/a </td>
+      <td id='student31proj4'> n/a </td>
+      <td id='student31total'> n/a </td>
+    </tr>
+    <tr>
+      <td> Student #32 </td>
+      <td id="student32proj1"> n/a </td>
+      <td id='student32proj2'> n/a </td>
+      <td id='student32proj3'> n/a </td>
+      <td id='student32proj4'> n/a </td>
+      <td id='student32total'> n/a </td>
+    </tr>
+    <tr>
+      <td> Student #33 </td>
+      <td id="student33proj1"> n/a </td>
+      <td id='student33proj2'> n/a </td>
+      <td id='student33proj3'> n/a </td>
+      <td id='student33proj4'> n/a </td>
+      <td id='student33total'> n/a </td>
+    </tr>
 
-          </div>
-          </div>
+    <tr>
+      <td> Student #34 </td>
+      <td id="student34proj1"> n/a </td>
+      <td id='student34proj2'> n/a </td>
+      <td id='student34proj3'> n/a </td>
+      <td id='student34proj4'> n/a </td>
+      <td id='student34total'> n/a </td>
+    </tr>
+    <tr>
+      <td> Student #35 </td>
+      <td id="student35proj1"> n/a </td>
+      <td id='student35proj2'> n/a </td>
+      <td id='student35proj3'> n/a </td>
+      <td id='student35proj4'> n/a </td>
+      <td id='student35total'> n/a </td>
+    </tr>
+    <tr>
+      <td> Student #36 </td>
+      <td id="student36proj1"> n/a </td>
+      <td id='student36proj2'> n/a </td>
+      <td id='student36proj3'> n/a </td>
+      <td id='student36proj4'> n/a </td>
+      <td id='student36total'> n/a </td>
+    </tr>
+    <tr>
+      <td> Student #37 </td>
+      <td id="student37proj1"> n/a </td>
+      <td id='student37proj2'> n/a </td>
+      <td id='student37proj3'> n/a </td>
+      <td id='student37proj4'> n/a </td>
+      <td id='student37total'> n/a </td>
+    </tr>
+    <tr>
+      <td> Student #38 </td>
+      <td id="student38proj1"> n/a </td>
+      <td id='student38proj2'> n/a </td>
+      <td id='student38proj3'> n/a </td>
+      <td id='student38proj4'> n/a </td>
+      <td id='student38total'> n/a </td>
+    </tr>
+    <tr>
+      <td> Student #39 </td>
+      <td id="student39proj1"> n/a </td>
+      <td id='student39proj2'> n/a </td>
+      <td id='student39proj3'> n/a </td>
+      <td id='student39proj4'> n/a </td>
+      <td id='student39total'> n/a </td>
+    </tr>
+    <tr>
+      <td> Student #40 </td>
+      <td id="student40proj1"> n/a </td>
+      <td id='student40proj2'> n/a </td>
+      <td id='student40proj3'> n/a </td>
+      <td id='student40proj4'> n/a </td>
+      <td id='student40total'> n/a </td>
+    </tr>
+    <tr>
+      <td> Student #41 </td>
+      <td id="student41proj1"> n/a </td>
+      <td id='student41proj2'> n/a </td>
+      <td id='student41proj3'> n/a </td>
+      <td id='student41proj4'> n/a </td>
+      <td id='student41total'> n/a </td>
+    </tr>
+    <tr>
+      <td> Student #42 </td>
+      <td id="student42proj1"> n/a </td>
+      <td id='student42proj2'> n/a </td>
+      <td id='student42proj3'> n/a </td>
+      <td id='student42proj4'> n/a </td>
+      <td id='student42total'> n/a </td>
+    </tr>
+    <tr>
+      <td> Student #43 </td>
+      <td id="student43proj1"> n/a </td>
+      <td id='student43proj2'> n/a </td>
+      <td id='student43proj3'> n/a </td>
+      <td id='student43proj4'> n/a </td>
+      <td id='student43total'> n/a </td>
+    </tr>
+    <tr>
+      <td> Student #44 </td>
+      <td id="student44proj1"> n/a </td>
+      <td id='student44proj2'> n/a </td>
+      <td id='student44proj3'> n/a </td>
+      <td id='student44proj4'> n/a </td>
+      <td id='student44total'> n/a </td>
+    </tr>
+    <tr>
+      <td> Student #45 </td>
+      <td id="student45proj1"> n/a </td>
+      <td id='student45proj2'> n/a </td>
+      <td id='student45proj3'> n/a </td>
+      <td id='student45proj4'> n/a </td>
+      <td id='student45total'> n/a </td>
+    </tr>
+    <tr>
+      <td> Student #46 </td>
+      <td id="student46proj1"> n/a </td>
+      <td id='student46proj2'> n/a </td>
+      <td id='student46proj3'> n/a </td>
+      <td id='student46proj4'> n/a </td>
+      <td id='student46total'> n/a </td>
+    </tr>
+    <tr>
+      <td> Student #47 </td>
+      <td id="student47proj1"> n/a </td>
+      <td id='student47proj2'> n/a </td>
+      <td id='student47proj3'> n/a </td>
+      <td id='student47proj4'> n/a </td>
+      <td id='student47total'> n/a </td>
+    </tr>
+    <tr>
+      <td> Student #48 </td>
+      <td id="student48proj1"> n/a </td>
+      <td id='student48proj2'> n/a </td>
+      <td id='student48proj3'> n/a </td>
+      <td id='student48proj4'> n/a </td>
+      <td id='student48total'> n/a </td>
+    </tr>
+  </table>
 
-
-<div class="jumbotron"> 
-
-<div class="container">
-<!-- col means column, md >=992px (Also use xs, sm and lg), and the 3 represents the size of the column
-3 * 4 = 12 (A 6 column layout would use 2 if they had equal size) -->
-  <div class="row">
-    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-        
-      <div class="media">
-          <a class="pull-left">
-        <img class="media-object" src="media/graph1.png" id="graph" alt="team graph">
-          </a>
-      <div class="media-body">
-            <h4> <a href="index.html"> <span class="text-headermedium">Team 1</span> </h4>
-       </div>
-     </div>
-      </div>
-    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-      <div class="media">
-          <a class="pull-left">
-        <img class="media-object" src="media/graph1.png" id="graph" alt="team graph">
-          </a>
-      <div class="media-body">
-            <h4> <a href="index.html"><span class="text-headermedium">Team 2</span> </h4>
-       </div>
-     </div>
-      </div>
-
-     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-      <div class="media">
-          <a class="pull-left">
-        <img class="media-object" src="media/graph1.png" id="graph" alt="team graph">
-          </a>
-      <div class="media-body">
-            <h4> <a href="index.html"><span class="text-headermedium">Team 3</span> </h4>
-       </div>
-     </div>
-      </div>
-      
-  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-      <div class="media">
-          <a class="pull-left">
-        <img class="media-object" src="media/graph1.png" id="graph" alt="team graph">
-          </a>
-      <div class="media-body">
-            <h4> <a href="index.html"><span class="text-headermedium">Team 4</span> </h4>
-       </div>
-     </div>
-      </div>
-     
-  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-      <div class="media">
-          <a class="pull-left">
-        <img class="media-object" src="media/graph1.png" id="graph" alt="team graph">
-          </a>
-      <div class="media-body">
-            <h4><a href="index.html"> <span class="text-headermedium">Team 5</span> </h4>
-       </div>
-     </div>
-      </div>
-<p>
-
-    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-      <div class="media">
-          <a class="pull-left">
-        <img class="media-object" src="media/graph1.png" id="graph" alt="team graph">
-          </a>
-      <div class="media-body">
-            <h4> <a href="index.html"><span class="text-headermedium">Team 6</span> </h4>
-       </div>
-     </div>
-      </div>
-<p>
-
-    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-      <div class="media">
-          <a class="pull-left">
-        <img class="media-object" src="media/graph1.png" id="graph" alt="team graph">
-          </a>
-      <div class="media-body">
-            <h4> <a href="index.html"><span class="text-headermedium">Team 7</span> </h4>
-       </div>
-     </div>
-      </div>
-<p>
-
-     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-      <div class="media">
-          <a class="pull-left">
-        <img class="media-object" src="media/graph1.png" id="graph" alt="team graph">
-          </a>
-      <div class="media-body">
-            <h4> <a href="index.html"><span class="text-headermedium">Team 8</span> </h4>
-       </div>
-     </div>
-      </div>
-<p>
-      
-  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-      <div class="media">
-          <a class="pull-left">
-        <img class="media-object" src="media/graph1.png" id="graph" alt="team graph">
-          </a>
-      <div class="media-body">
-            <h4> <a href="index.html"><span class="text-headermedium">Team 9</span> </h4>
-       </div>
-     </div>
-      </div>
-<p>
-     
-  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-      <div class="media">
-          <a class="pull-left">
-        <img class="media-object" src="media/graph1.png" id="graph" alt="team graph">
-          </a>
-      <div class="media-body">
-            <h4> <a href="index.html"><span class="text-headermedium">Team 10</span> </h4>
-       </div>
-     </div>
-      </div>
-<p>
-
-  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-      <div class="media">
-          <a class="pull-left">
-        <img class="media-object" src="media/graph1.png" id="graph" alt="team graph">
-          </a>
-      <div class="media-body">
-            <h4> <a href="index.html"> <span class="text-headermedium">Team 11</span> </h4>
-       </div>
-     </div>
-      </div>
-<p>
-<p>
-     </div>
-   </div>
-   </div> <!-- media-body for Eggplant closes here -->
 </div>
 </div>
-</div>
-</div>
-</div>
+
 <span class="text-footer">This tool is brought to you by Group 8.</span>
 
 </div>
@@ -311,12 +573,26 @@ height: 400px;
 </div><br>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
+<script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBWQYbrbRHn4HeiVbuboMBSAmmNvRIW0o4",
+      authDomain: "database-c6d75.firebaseapp.com",
+      databaseURL: "https://database-c6d75.firebaseio.com",
+      projectId: "database-c6d75",
+      storageBucket: "database-c6d75.appspot.com",
+      messagingSenderId: "996163510328"
+    };
+    firebase.initializeApp(config);
+  </script>
+
 <!-- Use downloaded version of Bootstrap -->
 <script src="js/bootstrap.min.js"></script>
+<script src="js/instructor_table.js"></script>
 </body>
 </html>
 
-    <!-- Bootstrap core JavaScript
+    <!-- Bootstrap core JavaScript-->
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
