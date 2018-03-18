@@ -150,7 +150,6 @@ table, th, td {
 </div>
 
 
-<span id="demo2"> Hello </span>
 <div class="container">
 <!-- jumbotron enlarges fonts and puts everything in a gray box with rounded corners. If jumbotron is outside a container it fills the total width. You can change the styles by placing the changes after the Bootstrap CDN link -->
 <div class="jumbotron"> 
@@ -573,18 +572,20 @@ table, th, td {
 </div><br>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
+
+<script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
 <script>
-    // Initialize Firebase
-    var config = {
-      apiKey: "AIzaSyBWQYbrbRHn4HeiVbuboMBSAmmNvRIW0o4",
-      authDomain: "database-c6d75.firebaseapp.com",
-      databaseURL: "https://database-c6d75.firebaseio.com",
-      projectId: "database-c6d75",
-      storageBucket: "database-c6d75.appspot.com",
-      messagingSenderId: "996163510328"
-    };
-    firebase.initializeApp(config);
-  </script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBWQYbrbRHn4HeiVbuboMBSAmmNvRIW0o4",
+    authDomain: "database-c6d75.firebaseapp.com",
+    databaseURL: "https://database-c6d75.firebaseio.com",
+    projectId: "database-c6d75",
+    storageBucket: "database-c6d75.appspot.com",
+    messagingSenderId: "996163510328"
+  };
+  firebase.initializeApp(config);
+</script>
 
 <!-- Use downloaded version of Bootstrap -->
 <script src="js/bootstrap.min.js"></script>

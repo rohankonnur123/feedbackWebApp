@@ -164,7 +164,7 @@ button:hover {
 
 <body>
 
- <!-- font : <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+ <!-- font : <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'-->
 
   <!-- CONTAINERS -->
   <!-- container puts padding around itself while container-fluid fills the whole screen. Bootstap grids require a container. -->
@@ -210,7 +210,7 @@ button:hover {
       <form action="/action_page.php" method="get">
 
 <p> Select the project number you would like to evaluate below. Submit one form per project. </p>
-    <input list="project number" name="project number">
+    <input id='projnum' list="project number" name="project number">
 
      <datalist id="project number">
        <option value="Project 1">
@@ -232,13 +232,13 @@ button:hover {
 <!--TEAM MEMBER 1-->
 
  <h3> <span class="text-headermedium">Team Member 1 </span> </h3>
-    <input list="student" name="student">
+    <input id='studentname' list="student" name="student">
 
      <datalist id="student">
-       <option value="Justin">
-       <option value="Pancham">
-       <option value="Rohan">
-        <option value="Ruth">
+       <option value="Justin M">
+       <option value="Pancham Y">
+       <option value="Rohan K">
+        <option value="Ruth M">
         <option value="n/a">
      </datalist>
 
@@ -260,7 +260,7 @@ button:hover {
 </div>
 <p>
       <div class="slidecontainer">
-        <input type="range" min="0" max="5" value="2" class="slider" id="q1myRange">
+        <input type="range" min="0" max="5" value="2" class="slider" id="p1q1myRange">
       </div>
   <span class="text-primary">score given: <span id="q1"></span></span></p>
 
@@ -280,7 +280,7 @@ button:hover {
 </div>
 <p>
       <div class="slidecontainer">
-        <input type="range" min="0" max="5" value="2" class="slider" id="q2myRange">
+        <input type="range" min="0" max="5" value="2" class="slider" id="p1q2myRange">
       </div>
       <span class="text-primary">score given: <span id="q2"></span></span></p>
 
@@ -301,7 +301,7 @@ button:hover {
 </div>
 <p>
       <div class="slidecontainer">
-        <input type="range" min="0" max="5" value="2" class="slider" id="q3myRange">
+        <input type="range" min="0" max="5" value="2" class="slider" id="p1q3myRange">
       </div>
       <span class="text-primary">score given: <span id="q3"></span></span></p>
 
@@ -321,7 +321,7 @@ button:hover {
 </div>
 <p>
       <div class="slidecontainer">
-        <input type="range" min="0" max="5" value="2" class="slider" id="q4myRange">
+        <input type="range" min="0" max="5" value="2" class="slider" id="p1q4myRange">
       </div>
       <span class="text-primary">score given: <span id="q4"></span></span></p>
 
@@ -341,7 +341,7 @@ button:hover {
 </div>
 <p>
       <div class="slidecontainer">
-        <input type="range" min="0" max="5" value="2" class="slider" id="q5myRange">
+        <input type="range" min="0" max="5" value="2" class="slider" id="p1q5myRange">
       </div>
       <span class="text-primary">score given: <span id="q5"></span></span></p>
 
@@ -361,7 +361,7 @@ button:hover {
 </div>
 <p>
       <div class="slidecontainer">
-        <input type="range" min="0" max="5" value="2" class="slider" id="q6myRange">
+        <input type="range" min="0" max="5" value="2" class="slider" id="p1q6myRange">
       </div>
       <span class="text-primary">score given: <span id="q6"></span></span></p>
 
@@ -381,7 +381,7 @@ button:hover {
 </div>
 <p>
       <div class="slidecontainer">
-        <input type="range" min="0" max="5" value="2" class="slider" id="q7myRange">
+        <input type="range" min="0" max="5" value="2" class="slider" id="p1q7myRange">
       </div>
       <span class="text-primary">score given: <span id="q7"></span></span></p>
 
@@ -401,7 +401,7 @@ button:hover {
 </div>
 <p>
       <div class="slidecontainer">
-        <input type="range" min="0" max="5" value="2" class="slider" id="q8myRange">
+        <input type="range" min="0" max="5" value="2" class="slider" id="p1q8myRange">
       </div>
       <span class="text-primary">score given: <span id="q8"></span></span></p>
 
@@ -422,7 +422,7 @@ button:hover {
 </div>
 <p>
       <div class="slidecontainer">
-        <input type="range" min="0" max="5" value="2" class="slider" id="q9myRange">
+        <input type="range" min="0" max="5" value="2" class="slider" id="p1q9myRange">
       </div>
       <span class="text-primary">score given: <span id="q9"></span></span></p>
 
@@ -442,7 +442,7 @@ button:hover {
 </div>
 <p>
       <div class="slidecontainer">
-        <input type="range" min="0" max="5" value="2" class="slider" id="q10myRange">
+        <input type="range" min="0" max="5" value="2" class="slider" id="p1q10myRange">
       </div>
       <span class="text-primary">score given: <span id="q10"></span></span></p>
 
@@ -462,42 +462,42 @@ Score 5 : Always positive in this way
 </div>
 <p>
       <div class="slidecontainer">
-        <input type="range" min="0" max="5" value="2" class="slider" id="q11myRange">
+        <input type="range" min="0" max="5" value="2" class="slider" id="p1q11myRange">
       </div>
       <span class="text-primary">score given: <span id="q11"></span></span></p>
 
                   <!-- question 12 slider  -->
       <h4> <span class="text-headermedium" style="font-weight:bold">On a scale from 1 - 100, how reliable was your teammate during this project in setting and meeting deadlines?</span> </h4>
       <div class="slidecontainer">
-        <input type="range" min="0" max="100" value="50" class="slider" id="q12myRange">
+        <input type="range" min="0" max="100" value="50" class="slider" id="p1q12myRange">
       </div>
       <br> <span class="text-primary">score given: <span id="q12"></span></span></p>
 
                   <!-- question 13 slider -->
       <h4> <span class="text-headermedium" style="font-weight:bold">On a scale from 1 - 100, how would you rate the leadership skills of your teammate?</span> </h4>
       <div class="slidecontainer">
-        <input type="range" min="0" max="100" value="50" class="slider" id="q13myRange">
+        <input type="range" min="0" max="100" value="50" class="slider" id="p1q13myRange">
       </div>
       <br> <span class="text-primary">score given: <span id="q13"></span></span></p>
 
                   <!-- question 14 slider -->
       <h4> <span class="text-headermedium" style="font-weight:bold">On a scale from 1 - 100, how much did your teammate positively contribute to the group?</span> </h4>
       <div class="slidecontainer">
-        <input type="range" min="0" max="100" value="50" class="slider" id="q14myRange">
+        <input type="range" min="0" max="100" value="50" class="slider" id="p1q14myRange">
       </div>
       <br> <span class="text-primary">score given: <span id="q14"></span></span></p>
 
                   <!-- question 15 long text box -->
       <h4> <span class="text-headermedium" style="font-weight:bold">State something you admire about your teammate and give an anecdote of a time they asked a good question or took initiative.</span> </h4>
-      <textarea id="question15" placeholder="comments..."></textarea>
+      <textarea id="p1question15" placeholder="comments..."></textarea>
 
                   <!-- question 16 long text box -->
       <h4> <span class="text-headermedium" style="font-weight:bold">What is something your teammate can improve upon?</span> </h4>
-      <textarea id="question16" placeholder="comments..."></textarea>
+      <textarea id="p1question16" placeholder="comments..."></textarea>
 
                   <!-- question 17 long text box -->
       <h4> <span class="text-headermedium" style="font-weight:bold">Please enter any additional feedback here.</span> </h4>
-      <textarea id="question17" placeholder="comments..."></textarea>
+      <textarea id="p1question17" placeholder="comments..."></textarea>
 
 <!-- TEAM MEMBER 2 -->
 <p> </p>
