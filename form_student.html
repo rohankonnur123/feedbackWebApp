@@ -185,7 +185,7 @@ button:hover {
           <div class="btn-group lg-btn-group-lg md-btn-group-md sm-btn-group-lg xs-btn-group-md" role="group" aria-label="...">
 
 
-            <a href="dashboard_student.html" class = "btn btn-warning btn-lg" role="button" button type= "submit"> <span class="text-button">dashboard</span> </a>
+            <a href="form_student.html" class = "btn btn-warning btn-lg" role="button" button type= "submit"> <span class="text-button">submit form</span> </a>
             <a href="feedback_student.html" class = "btn btn-warning btn-lg" role="button" button type= "submit"> <span class="text-button">my feedback</span> </a>
             <a href="index.html" class = "btn btn-warning btn-lg" role="button" button type= "submit"> <span class="text-button">log out</span> </a>
 
@@ -209,7 +209,22 @@ button:hover {
       </div>
       <form action="/action_page.php" method="get">
 
-<p> Select the project number you would like to evaluate below. Submit one form per project. </p>
+<p> Select the appropriate entries in the drop-down menus below or start typing and they will appear. Then answer the feedback questions. Fill out one form per team member, per project.
+ 
+ <h3> <span class="text-headermedium">My name is... </span> </h3>
+    <input id='studentname' list="student" name="student">
+
+     <datalist id="student">
+       <option value="Justin M">
+       <option value="Pancham Y">
+       <option value="Rohan K">
+        <option value="Ruth M">
+        <option value="n/a">
+     </datalist>
+
+    </form>
+<p>
+<h3> <span class="text-headermedium">This evaluation is for project number... </span> </h3>
     <input id='projnum' list="project number" name="project number">
 
      <datalist id="project number">
@@ -222,16 +237,11 @@ button:hover {
     </form>
 
      <form action="/action_page.php" method="get">
-      <p>
-        <p> Directions:
-<p> 1. Select the name of the person you would like to evaluate.
-  <p> 2. Select <b>"N/A"</b> under Team Member 4 if your team only has four members.
-    <p> 3. You must enter comments below the score assigned. </p>
-<p> </p>
+     
 
-<!--TEAM MEMBER 1-->
+<!--Name of person being evaluated-->
 
- <h3> <span class="text-headermedium">Team Member 1 </span> </h3>
+ <h3> <span class="text-headermedium">I am evaluating...</span> </h3>
     <input id='studentname' list="student" name="student">
 
      <datalist id="student">
@@ -264,25 +274,7 @@ button:hover {
       </div>
   <span class="text-primary">score given: <span id="q1"></span></span></p>
 
-     <!-- question 2 slider  -->
-     <h4> <span class="text-headermedium" style="font-weight:bold">Discipline - attendance at meetings</span> </h4>
-<div class="container">
-  <button type="button" class="choose" data-toggle="collapse" data-target="#demo2"><span class="text-button">view guidelines</span></button>
-  <div id="demo2" class="collapse">
-    <p> <span class="text-primary">Scoring Range: 0-5<p>
-0 : Unreliable, often absent or late without explanation
-<p>
-3 : Made an average contribution in this respect
-<p>
-5 : Reliable, always present when required except in special circumstances
-
-  </div>
-</div>
-<p>
-      <div class="slidecontainer">
-        <input type="range" min="0" max="5" value="2" class="slider" id="p1q2myRange">
-      </div>
-      <span class="text-primary">score given: <span id="q2"></span></span></p>
+<!-- question 2 was taken out  -->
 
 <!-- question 3 slider  -->
 
@@ -325,25 +317,7 @@ button:hover {
       </div>
       <span class="text-primary">score given: <span id="q4"></span></span></p>
 
-<!-- question 5 slider  -->
-      <h4> <span class="text-headermedium" style="font-weight:bold">Enthusiasm - motivation, creativity, initiative </span> </h4>
-<div class="container">
-  <button type="button" class="choose" data-toggle="collapse" data-target="#demo5"><span class="text-button">view guidelines</span></button>
-  <div id="demo5" class="collapse">
-    <p> <span class="text-primary">Scoring Range: 0-5<p>
-0 : No help at all
-<p>
-3 : About average for this group
-<p>
-5 : Really excellent in this respect
-
-  </div>
-</div>
-<p>
-      <div class="slidecontainer">
-        <input type="range" min="0" max="5" value="2" class="slider" id="p1q5myRange">
-      </div>
-      <span class="text-primary">score given: <span id="q5"></span></span></p>
+<!-- question 5 was taken out   -->
 
 <!-- question 6 slider  -->
       <h4> <span class="text-headermedium" style="font-weight:bold">Organization - self-organization, ability to organize others, planning, setting targets, keeping to deadlines</span> </h4>
@@ -426,25 +400,7 @@ button:hover {
       </div>
       <span class="text-primary">score given: <span id="q9"></span></span></p>
 
-                  <!-- question 10 slider  -->
-      <h4> <span class="text-headermedium" style="font-weight:bold">Between-Meeting Communication - keeping in touch (messenger/chat/etc.) during the duration of the project</span> </h4>
-<div class="container">
-  <button type="button" class="choose" data-toggle="collapse" data-target="#demo10"><span class="text-button">view guidelines</span></button>
-  <div id="demo10" class="collapse">
-    <p> <span class="text-primary">Scoring Range: 0-5<p>
-0 : Rarely kept in touch
-<p>
-3 : Sometimes in touch, sometimes not
-<p>
-5 : Always kept in touch
-
-  </div>
-</div>
-<p>
-      <div class="slidecontainer">
-        <input type="range" min="0" max="5" value="2" class="slider" id="p1q10myRange">
-      </div>
-      <span class="text-primary">score given: <span id="q10"></span></span></p>
+<!-- question 10 was taken out  -->
 
 <!-- question 11 slider  -->
       <h4> <span class="text-headermedium" style="font-weight:bold">Reflection - thoughtfulness about work performed (i.e. constructive criticism, open-mindedness, seeking out advice)</span> </h4>
@@ -501,11 +457,20 @@ Score 5 : Always positive in this way
 
 
 
-      <!-- submit button -->
+<!-- submit button -->
       <br><br>
       <div class='wrapper'>
         <button id="submitBtn" onclick='submitClick()' align="center"><b>Submit!</b><i class="submitBtn" aria-hidden="true"></i></button>
       </div>
+ 
+ <h4> <span class="text-headermedium" style="font-weight:bold">Your entries will remain in the form although you have clicked submit. Reset the form with the button below and continue to fill out one form each for the rest of your teammates. </span> </h4>
+
+<!-- refresh button -->
+      <br>
+            <div class='wrapper'>
+         <input type="button" value="Refresh Page" onClick="location.href=location.href">
+      </div>
+
 
     </p>
   </div>
