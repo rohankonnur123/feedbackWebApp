@@ -18,14 +18,14 @@ var p1q14slider = document.getElementById("p1q14myRange")
 var p1q15 = document.getElementById("p1question15")
 var p1q16 = document.getElementById("p1question16")
 var p1q17 = document.getElementById("p1question17")
-// var postScore = document.getElementById("overallScore")
+var postScore = document.getElementById("overallScore")
 
 
-// var firebasereference = firebase.database().ref().child("Rohan Konnur").child("Comments")
+var firebasereference = firebase.database().ref().child("Project 1").child("Rohan K").child("Slider 15 Value")
 
-// firebasereference.on('value', function(databasesnapshot) {
-// 	postScore.innerText = databasesnapshot.val();
-// })
+firebasereference.on('value', function(databasesnapshot) {
+	postScore.innerText = databasesnapshot.val();
+})
 
 function submitClick() {
 
