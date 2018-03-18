@@ -53,6 +53,7 @@ function submitClick() {
 
 	// firebaseRef.set(projnum)
 	// firebaseRef.child(projnum).set(studentname)
+	firebaseRef.child(projVal).child(studentVal).child("Name").set(studentVal)
 	firebaseRef.child(projVal).child(studentVal).child("Slider 1 Value").set(p1q1sliderVal)
 	firebaseRef.child(projVal).child(studentVal).child("Slider 2 Value").set(p1q2sliderVal)
 	firebaseRef.child(projVal).child(studentVal).child("Slider 3 Value").set(p1q3sliderVal)
