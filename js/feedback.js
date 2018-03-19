@@ -1,3 +1,5 @@
+var sourcestudentname = document.getElementById("sourcestudentname")
+
 var p1overallScore = document.getElementById("p1overallScore")
 var p1creativityscore = document.getElementById("p1creativityscore")
 var p1cooperationscore = document.getElementById("p1cooperationscore")
@@ -18,7 +20,7 @@ var p1additionalscore = document.getElementById("p1additionalscore")
 // var ref = database.ref().child("Project 1")
 // ref.on("value", )
 
-
+firebasereference = firebase.database().ref().child("Project 1").child(sourcestudentname)..child(p1creativityscore)
 
 
 
