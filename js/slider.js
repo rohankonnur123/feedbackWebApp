@@ -6,14 +6,6 @@ slider1.oninput = function() {
   output1.innerHTML = this.value;
 }
 
-var slider2 = document.getElementById("p1q2myRange");
-var output2 = document.getElementById("q2");
-output2.innerHTML = slider2.value;
-
-slider2.oninput = function() {
-  output2.innerHTML = this.value;
-}
-
 var slider3 = document.getElementById("p1q3myRange");
 var output3 = document.getElementById("q3");
 output3.innerHTML = slider3.value;
@@ -30,13 +22,6 @@ slider4.oninput = function() {
   output4.innerHTML = this.value;
 }
 
-var slider5 = document.getElementById("p1q5myRange");
-var output5 = document.getElementById("q5");
-output5.innerHTML = slider5.value;
-
-slider5.oninput = function() {
-  output5.innerHTML = this.value;
-}
 var slider6 = document.getElementById("p1q6myRange");
 var output6 = document.getElementById("q6");
 output6.innerHTML = slider6.value;
@@ -65,13 +50,7 @@ output9.innerHTML = slider9.value;
 slider9.oninput = function() {
   output9.innerHTML = this.value;
 }
-var slider10 = document.getElementById("p1q10myRange");
-var output10 = document.getElementById("q10");
-output10.innerHTML = slider10.value;
 
-slider10.oninput = function() {
-  output10.innerHTML = this.value;
-}
 var slider11 = document.getElementById("p1q11myRange");
 var output11 = document.getElementById("q11");
 output11.innerHTML = slider11.value;
