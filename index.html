@@ -372,10 +372,10 @@ textarea {
 <p>
 
  
-<!--a href="form_student.html" class = "btn btn-primary btn-lg" role="button" button type= "submit"> <span class="text-button">Student Log In</span> </a>
+<!--a href="form_student.html" class = "btn btn-primary btn-lg" role="button" button type= "submit"> <span class="text-button">Student Log In</span> </a>-->
 
 <!--START GOOGLE LOGIN -->
-<script src="https://apis.google.com/js/platform.js" async defer></script>
+<!-- <script src="https://apis.google.com/js/platform.js" async defer></script>
 
 <html lang="en">
   <head>
@@ -386,17 +386,18 @@ textarea {
   <body>
     <div class="wrapper g-signin2 btn btn-primary btn-lg" align="center" data-onsuccess="onSignIn" role="button" button type= "submit"> <span class="text-button">Student Log In</span> ></div>
   </body>
-</html>
+</html> -->
+<a href="form_student.html" class = "btn btn-primary btn-lg" role="button" button type= "submit"> <span class="text-button">Student Log In</span> </a>
 
 <!--END GOOGLE LOGIN -->
 <br>
 <br>
 <br>
-<textarea id="p1question15" placeholder="instructor username..."></textarea>
+<textarea id="iuser" placeholder="instructor username..."></textarea>
 <br>
-<textarea id="p1question15" placeholder="instructor password..."></textarea>
+<textarea id="ipass" placeholder="instructor password..."></textarea>
 <br>
-<a href="dashboard_instructor.html" class = "btn btn-primary btn-lg" role="button" button type= "submit"> <span class="text-button">Instructor Log In</span> </a>
+<a href="dashboard_instructor.html" class = "btn btn-primary btn-lg" onclick='talogin()' role="button" button type= "submit"> <span class="text-button">Instructor Log In</span> </a>
 
 <!-- button here: div class="g-signin2" data-onsuccess="onSignIn"></div-->
 
@@ -414,6 +415,7 @@ textarea {
 
 <!-- Use downloaded version of Bootstrap -->
 <script src="js/bootstrap.min.js"></script>
+<script src="js/talogin.js"></script>
 </body>
 </html>
 
