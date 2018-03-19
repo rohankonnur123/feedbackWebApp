@@ -31,6 +31,9 @@
     font-family: DINNextLTPro-Bold;
     src: url(fonts/DINNextLTPro-Bold.otf);
 }
+.wrapper {
+    text-align: center;
+}
 
 .text-primary {
   font-size: 1em;
@@ -109,7 +112,10 @@
   font-family: 'DINNextLTPro-Light';
     color:#504A4B;   
 }
-
+textarea {
+  width: 250px;
+  height: 30px;
+}
 
 /* Statistics */
 
@@ -378,12 +384,18 @@
     <script src="https://apis.google.com/js/platform.js" async defer></script>
   </head>
   <body>
-    <div class="g-signin2 btn btn-primary btn-lg" data-onsuccess="onSignIn" role="button" button type= "submit"> <span class="text-button">Student Log In</span> ></div>
+    <div class="wrapper g-signin2 btn btn-primary btn-lg" align="center" data-onsuccess="onSignIn" role="button" button type= "submit"> <span class="text-button">Student Log In</span> ></div>
   </body>
 </html>
 
 <!--END GOOGLE LOGIN -->
-<p>
+<br>
+<br>
+<br>
+<textarea id="p1question15" placeholder="instructor username..."></textarea>
+<br>
+<textarea id="p1question15" placeholder="instructor password..."></textarea>
+<br>
 <a href="dashboard_instructor.html" class = "btn btn-primary btn-lg" role="button" button type= "submit"> <span class="text-button">Instructor Log In</span> </a>
 
 <!-- button here: div class="g-signin2" data-onsuccess="onSignIn"></div-->
